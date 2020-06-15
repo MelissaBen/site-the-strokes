@@ -1,0 +1,160 @@
+
+
+/* ================================
+General
+================================= */
+@font-face {
+  font-family: 'Bertha Regular' ;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bertha Regular'), url('Bertha-Regular.woff') format('woff');
+  }
+
+body{
+	text-align: center;
+	font-size: 14px;
+  line-height: 1.6em;
+  color: white;
+  background-color: black;
+  
+	
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  font-style: italic;
+  
+  ;
+}
+
+h2 {
+  font-size: 30px ;
+  font-style: italic;
+ 
+}
+ 
+
+
+
+
+/* ==========================  START NAVBAR  ================================= */
+
+nav.navbar{
+	position: fixed;
+	top: 0px;
+	margin-bottom: 0px;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	border-radius: 0px;
+	transition: all 0.2s;
+}
+
+.navbar-nav{
+  float: right;
+  
+}
+
+nav.navbar.fixed-to-top{
+	top: 0px;
+}
+
+.navbar-default{
+	border: none;
+	border-bottom: none;
+	opacity: 1;
+
+	z-index: 9999;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+  color: #00c1c1;
+	cursor: pointer;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	outline: 0;
+}
+
+/* brand / logo */
+.navbar-default .navbar-brand{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+
+a, a:hover {
+    color: #00c1c1;
+  }
+  
+  
+  /* Back to top button */
+  .back-to-top {
+    background: #00c1c1;
+    color: #fff;
+  }
+  
+  
+  .back-to-top:focus {
+    background: #00c1c1;
+    color: #fff;
+  }
+  
+  .back-to-top:hover {
+    background: #019090;
+    color: #fff;
+  }
+  
+  .navbar-default {
+    background: #C62F34;
+  }
+  
+  
+  .form-control:focus {
+    border-color: #00c1c1;
+    -webkit-box-shadow: inset 0 1px 1px blue, 0 0 2px #00c1c1;
+    box-shadow: inset 0 1px 1px blue , 0 0 2px #00c1c1;
+  }
+  
+  .service .carousel-indicators .active {
+    background: #00c1c1;
+  }
+  
+  .btn-theme {
+    background: #00c1c1;
+  }
+  
+  .contact-widget i {
+    color: #00c1c1;
+  }
+
+
+
+
+
+/* Back to Top */
+#backtotop{
+  z-index:999;
+  display:inline-block; 
+  position:fixed; 
+  visibility:hidden;
+  bottom:20px; 
+  right:20px; 
+  width:36px; 
+  height:36px; 
+  line-height:36px;
+  font-size:16px; 
+  text-align:center; 
+  background-color: white;
+  border-radius: 20%;
+    }

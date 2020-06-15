@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion reussie </title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <main class="container mt-3">
+        <h1>Authentication</h1>
+        <hr>
+      
+        <hr>
+        <div id="firebaseui-auth-container"></div>
+        <section d="user_div" id="logeddin-div">
+
+            <h3>welcome </h3>
+            <p id="user_para"> commencer par ... </p>
+            <!-- Résultat de l'authentification à placer ici ... -->
+
+            <h1> Bonjour admin ! </h1>
+        </section>
+    </main>
+
+    <script src="firebase.js"></script>
+
+    <!-- jQuery et Bootstrap-->
+<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+<!-- SDK Firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+<script src="authentication.js" type="module"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 340px){
+  
+
+/*Contact*/
+ul.social-network li {
+    display: inline;
+    margin: 2px; 
+  }
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .social-circle li i {
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  /*p button */
+
+ .arrow-btn p {
+  padding: 20px;
+ }
+ 
+
+ /*contact*/
+
+ ul.social-network li {
+   width: 100px;
+ }
+ 
+}
+
+
+@media screen and (max-width: 450px) {
+
+     /*CONTACT*/
+
+     
+
+
+  .carousel-background img {
+    width: 50%;
+  }
+
+  
+    .home-section {
+      width: 100%;
+      height: 100%;
+      
+      margin-bottom: 30px;
+    
+    
+    }
+      ul.social-network li {
+    
+        margin: 0 5px;
+      }
+      .social-circle li a {
+        display: inline-block;
+        position: relative;
+        margin: 0 auto 0 auto;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+      }
+      .social-circle li i {
+        margin: 0;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      /* p button */
+      .arrow-btn p {
+        bottom: 17%;
+       }
+
+        /*contact*/
+ 
+       ul.social-network li {
+       width: 100px;
+}
+    }
+
+
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+
+   /*caroussel*/
+  
+   /*BUTTON*/
+
+   .arrow-btn i {
+     margin-left: -20px;
+   }
+  
+    /*NAV*/
+    .navbar-nav{
+        float: left;
+        text-align: start;
+      }
+    /*CONTACT*/
+
+    ul.social-network li {
+
+        margin: 0 5px;
+      }
+
+
+      ul.social-network{
+      flex-wrap: wrap;
+      padding: 0;
+      width: auto;
+    
+    
+    
+        
+      }
+     
+      .social-circle li a  {
+        margin: 0px;
+        font-size: 15px;
+      }
+      .social-circle li p  {
+        margin-bottom: 15px;
+        
+      }
+    
+      .carousel-background {
+        max-width: 100%;
+        height: auto;
+      }
+ 
+  
+}
+
+
+/* background image for iPad pro */ 
+
+@media only screen and (max-width: 1024px){
+   
+}
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+   
+
+}
+
+
+
+/* ================================
+more media queries
+================================= */
+
+
+@media (max-width:992px) {
+
+
+
+
+}
+
+
+@media (max-width:480px){
+
+
+
+}
