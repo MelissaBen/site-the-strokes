@@ -14,9 +14,6 @@ var config = {
 
   firebase.initializeApp(config);
 
- const auth = firebase.auth() ; 
-
-auth.signInWithEmailAndPassword(email , pass) ; 
 
 
 /*recuperer les donner - get elem*/

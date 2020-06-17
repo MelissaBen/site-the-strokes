@@ -53,7 +53,7 @@ function displayEmpData() {
         new_html += '<td id="date_'+empData.val().emp_id+'">' + empData.val().date + '</td>';
         new_html += '<td><a  class="edit" data-toggle="modal"><i class="material-icons editEmp"';
         new_html += 'data-toggle="tooltip" data-emp-id="' + empData.val().emp_id + '" title="Edit">&#xE254;</i></a>';
-        new_html += '<a class="" data-toggle="modal"><i class="material-icons delete"';
+        new_html += '<a class="delete" data-toggle="modal"><i class="material-icons delete"';
         new_html += 'data-toggle="tooltip"  data-emp-id="' + empData.val().emp_id + '" title="Delete">&#xE872;</i></a>';
         new_html += '</td>';
         new_html += '</tr>';

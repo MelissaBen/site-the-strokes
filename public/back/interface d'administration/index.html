@@ -56,21 +56,26 @@
 
 <body>
 
-
+  <button id="btnSignOut" class="btn btn-danger" >
+    <span>
+      Se deconnecter	
+    </span>
+  </button>
 
   <div class="container">
     <div class="table-wrapper">
       <div class="table-title">
         <div class="row">
           <div class="col-sm-6">
-            <h2>Ajouter <b>une date </b></h2>
+            <h2> Dates de concerts </h2>
           </div>
+          
           <div class="col-sm-6">
-            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+            <a href="#addEmployeeModal" class="btn btn-primary" data-toggle="modal"><i
                 class="material-icons">&#xE147;</i> <span> Ajouter une nouvelle date </span></a>
-            <a href="#deleteAllEmployeeModal" class="btn btn-danger delAll" data-toggle="modal"><i
+            <!--<a href="#deleteAllEmployeeModal" class="btn btn-danger delAll" data-toggle="modal"><i
                 class="material-icons">&#xE15C;</i> <span>Delete</span></a>
-          </div>
+            --> </div>
         </div>
       </div>
       <table id="table1" class="table table-striped table-hover">
@@ -78,7 +83,6 @@
           <tr>
 
             <th>Lieu</th>
-           
             <th>Address</th>
             <th>date</th>
             <th>Actions</th>
@@ -118,7 +122,7 @@
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="button" data-dismiss="modal" id="add_emp" class="btn btn-success" value="Add">
+            <input type="button" data-dismiss="modal" id="add_emp" class="btn btn-primary" value="Add">
           </div>
         </form>
       </div>
