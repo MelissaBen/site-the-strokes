@@ -1,5 +1,5 @@
-/** fleche haut  */
 
+/** fleche haut  */
 
 $("#backtotop").click(function () {
   $("body,html").animate({
