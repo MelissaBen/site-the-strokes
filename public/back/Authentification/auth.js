@@ -19,8 +19,9 @@
     /*recuperer les donner - get elem*/
 
     const txtEmail = document.getElementById("textEmail");
-    const txtPassword = document.getElementById('textPassword')
-    const btnLogin = document.getElementById('btnLogin')
+    const txtPassword = document.getElementById('textPassword');
+    const btnLogin = document.getElementById('btnLogin');
+    const btnSignOut = document.getElementById('btnSignOut')
 
     /* add login event */
 
@@ -33,15 +34,57 @@
         const auth = firebase.auth();
 
         // sign in */
+      
 
         const promise = auth.signInWithEmailAndPassword(email, pass);
         promise.then((res) => {
             console.log(res);
-        })
+
+            firebase.auth().onAuthStateChanged(user => {
+              if(user) {
+                window.location = '../back/administration/index.html'; //After successful login, user will be redirected to home.html
+              }
+         });
+            
+        });
+
+
         promise.catch(e => {
             console.log(e.message)
+           
+
+            var errorCode = e.code;
+            var errorMessage = e.message;
+        
+
+          if (errorCode != 'user') {
+            alert(' email ou mot de passe incorrect');
+           /* alert($('textPassword').attr('placeholder', 'mot de passe incorrect'));*/
+          } else {
+            alert(errorMessage);
+          }
+         
+            
         });
+
+     
     });
 
 
+  
+           /* logout*/
+
+
+          /* btnSignOut.addEventListener('click' ,e => {
+            firebase.auth.signOut() ; 
+            console.log("ok")
+          })*/
+      
+  
 }()); 
+
+
+
+
+
+

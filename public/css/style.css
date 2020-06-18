@@ -27,6 +27,16 @@ General
   src: local('Bertha Regular'), url('Bertha-Regular.woff') format('woff');
   }
 
+@font-face {
+  font-family: 'Ailerons' ;
+  font-style: normal;
+  font-weight: normal;
+  src:  url('../fonts/Ailerons_Font/Ailerons400.otf') format('truetype'),
+       url('../fonts/Ailerons_Font/README.txt')
+  }
+
+
+  
 body{
 	text-align: center;
 	font-size: 14px;
@@ -39,10 +49,14 @@ body{
 }
 
 h1 {
-  font-weight: bold;
+ 
   font-size: 80px;
-  font-style: italic;
-  font-family: 'Nunito', sans-serif;
+  
+  font-family:  'Ailerons' ;
+  
+  font-style: normal;
+  
+  text-transform: uppercase
   
   ;
 }
