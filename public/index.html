@@ -224,8 +224,8 @@
 
         <!--The First row-->
         <aside class="col-lg-4 col-md-4 col-sm-12 col-xs-12 left-row">
-          <ul class="dates-left">
-            <li class="wow fadeInRight highlight lhgh" data-index="0">
+          <ul class="dates-left" id="dates-left">
+            <!-- <li class="wow fadeInRight highlight lhgh" data-index="0">
 
               <span> Juin 05 </span>
               <div class="fl-inner">
@@ -233,7 +233,7 @@
                 <p>PARC DEL FORUM</p>
                 <a href="./php/liste_groupe1.php"> Billets </a>
               </div>
-            </li><!-- .highlight .left-row -->
+            </li>
 
             <li class="wow fadeInRight highlight lhgh" data-index="1">
               <span> Juin 13 </span>
@@ -242,7 +242,7 @@
                 <p>HILVARENBEEK, NETHERLANDSSA</p>
                 <a href="#"> Billets </a>
               </div>
-            </li><!-- .highlight .left-row -->
+            </li>
 
             <li class="wow fadeInRight highlight lhgh" data-index="2">
               <span> Juin 27 </span>
@@ -251,7 +251,7 @@
                 <p>PLAINE DE LA FILHOLE - PLEIN AIR </p>
                 <a href="#"> Billets </a>
               </div>
-            </li><!-- .highlight .left-row -->
+            </li>
 
             <li class="wow fadeInRight highlight lhgh" data-index="3">
               <span> Aout 16 </span>
@@ -260,7 +260,7 @@
                 <p> FLOW FESTIVAL 2020 </p>
                 <a href="#"> Billets </a>
               </div>
-            </li><!-- .highlight .left-row -->
+            </li> -->
 
           </ul>
         </aside><!-- .row .left-row -->
@@ -307,8 +307,8 @@
 
         <!--The Second row-->
         <aside class="col-lg-4 col-md-4 col-sm-12 col-xs-12 right-row">
-          <ul class="dates-right">
-            <li class="wow fadeInRight highlight rhgh" data-index="4">
+          <ul class="dates-right" id="dates-right">
+            <!-- <li class="wow fadeInRight highlight rhgh" data-index="4">
               <span> Aout 21 </span>
               <div class="fr-inner">
                 <h4>YUZAWA, JAPAN</h4>
@@ -316,7 +316,7 @@
                 <a href="#"> Billets </a>
 
               </div>
-            </li><!-- .highlight .left-row -->
+            </li>
             <li class=" wow fadeInRight highlight rhgh" data-index="5">
               <span> Oct. 16 </span>
               <div class="fr-inner">
@@ -324,7 +324,7 @@
                 <p>III POINTS 2020</p>
                 <a href="#"> Billets </a>
               </div>
-            </li><!-- .highlight .left-row -->
+            </li>
             <li class="wow fadeInRight highlight rhgh" data-index="6">
               <span> Oct. 17 </span>
               <div class="fr-inner">
@@ -332,7 +332,7 @@
                 <p>SHAKY KNEES 2020 </p>
                 <a href="#"> Billets </a>
               </div>
-            </li><!-- .highlight .left-row -->
+            </li>
             <li class="wow fadeInRight highlight rhgh" data-index="7">
               <span> Déc. 04 </span>
               <div class="fr-inner">
@@ -340,7 +340,7 @@
                 <p>FESTIVAL ESTEREO PICNIC 2020 </p>
                 <a href="#"> Billets </a>
               </div>
-            </li><!-- .highlight .left-row -->
+            </li> -->
           </ul>
         </aside><!-- .row .left-row -->
 
@@ -447,10 +447,8 @@
   <script src="js/modernizr.custom.js"></script>
   <script src="js/grid.js"></script>
   <script src="js/stellar.js"></script>
-  <script src="js/zenith.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/custom.js"></script>
+
+
 
 
 
@@ -459,9 +457,6 @@
 
 
 
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-  <script src="./back/administration/crud.js"></script>
 
   <!-- Firebase -->
 
@@ -476,7 +471,18 @@
   <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
 
+  <script src="js/init-app.js"></script>
 
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+  <script id="zenith-script"></script>
+  <script src="./back/administration/crud.js"></script>
+  <!-- <script src="js/zenith.js"></script> -->
+
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
