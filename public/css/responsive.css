@@ -2,6 +2,11 @@
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 340px){
   
+/* a propos du groupe */
+
+.content {
+  text-align: center;
+}
 
 /*Contact*/
 ul.social-network li {
@@ -44,7 +49,12 @@ ul.social-network li {
 
 @media screen and (max-width: 450px) {
 
-     /*CONTACT*/
+
+/* a propos du groupe */
+
+.content {
+  text-align: center;
+}
 
      
 
@@ -57,7 +67,6 @@ ul.social-network li {
     .home-section {
       width: 100%;
       height: 100%;
-      
       margin-bottom: 30px;
     
     
@@ -147,6 +156,12 @@ ul.social-network li {
         height: auto;
       }
  
+      /* a propos du groupe */
+
+.content {
+  text-align: center;
+}
+
   
 }
 

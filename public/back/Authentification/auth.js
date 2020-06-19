@@ -21,7 +21,7 @@
     const txtEmail = document.getElementById("textEmail");
     const txtPassword = document.getElementById('textPassword');
     const btnLogin = document.getElementById('btnLogin');
-    const btnSignOut = document.getElementById('btnSignOut')
+    
 
     /* add login event */
 
@@ -42,7 +42,10 @@
 
             firebase.auth().onAuthStateChanged(user => {
               if(user) {
-                window.location = '../back/administration/index.html'; //After successful login, user will be redirected to home.html
+                window.location = 'admin.html' ; //After successful login, user will be redirected to home.html
+              }
+              else {
+                window.location = 'connexion.html'
               }
          });
             
@@ -51,8 +54,7 @@
 
         promise.catch(e => {
             console.log(e.message)
-           
-
+            
             var errorCode = e.code;
             var errorMessage = e.message;
         
@@ -72,16 +74,9 @@
 
 
   
-           /* logout*/
-
-
-          /* btnSignOut.addEventListener('click' ,e => {
-            firebase.auth.signOut() ; 
-            console.log("ok")
-          })*/
-      
-  
 }()); 
+
+
 
 
 

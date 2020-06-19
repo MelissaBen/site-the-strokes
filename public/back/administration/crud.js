@@ -196,8 +196,31 @@ leadsRef.once('value', function (snapshot) {
     if (index < data.length / 2) {
       datesLeft.innerHTML = datesLeft.innerHTML + `<li class="wow fadeInRight highlight lhgh" data-index="${index}"> <span>${childData.date}</span><div class="fl-inner"><h4> ${childData.lieu}</h4><p>${childData.address}</p> <a href="./php/liste_groupe1.php"> Billets  </a></div></li>`;
     } else {
-      datesRight.innerHTML = datesRight.innerHTML + `<li class="wow fadeInRight highlight lhgh" data-index="${index}"> <span>${childData.date}</span><div class="fl-inner"><h4> ${childData.lieu}</h4><p>${childData.address}</p> <a href="./php/liste_groupe1.php"> Billets  </a></div></li>`;
+      datesRight.innerHTML = datesRight.innerHTML + `<li class="wow fadeInRight highlight lhgh" data-index="${index}"> <span>${childData.date}</span><div class="fr-inner"><h4> ${childData.lieu}</h4><p>${childData.address}</p> <a href="./php/liste_groupe1.php"> Billets  </a></div></li>`;
     }
   });
   zenithScript.setAttribute('src', 'js/zenith.js');
 });
+
+
+
+
+
+/* LOGOUT */
+
+const btnSignOut = document.getElementById('btnSignOut');
+
+btnSignOut.addEventListener('click' ,e => {
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    window.location = '../public/connexion.html'
+
+    console.log("ok")
+  }).catch(function(error) {
+    // An error happened.
+    alert("erreur")
+  });
+  
+})
+
+
